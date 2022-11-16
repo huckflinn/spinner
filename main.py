@@ -27,3 +27,12 @@ def spinner():
     back(100)
     right(120)
     update()
+
+def animate():
+    if state["turn"] > 0:
+        state["turn"] -= 1
+    if state["turn"] < 0:
+        state["turn"] += 1
+
+    spinner()
+    ontimer(animate, 20)
