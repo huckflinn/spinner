@@ -43,3 +43,12 @@ def flickright():
 def flickleft():
     state["turn"] -= 10
 
+setup(840, 840, 370, 0)
+hideturtle()
+tracer(False)
+width(5)
+onkey(flickright, "Right")
+onkey(flickleft, "Left")
+listen()
+animate()
+done()
