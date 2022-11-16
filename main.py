@@ -36,3 +36,10 @@ def animate():
 
     spinner()
     ontimer(animate, 20)
+
+def flickright():
+    state["turn"] += 10
+
+def flickleft():
+    state["turn"] -= 10
+
